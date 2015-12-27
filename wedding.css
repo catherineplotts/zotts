@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: #f0f0f0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 12px;
+	color: #FF9966;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 18px;
+}
+p a{
+	color: #0000ff;
+	font-size: 12px;
+	text-decoration: none;
+}
+a{
+	outline: none;
+}
+.f-left{
+	float:left;
+}
+.f-right{
+	float:right;
+}
+.clear{
+	clear: both;
+	overflow: hidden;
+}
+
+.center {
+ margin-left: auto;
+ margin-right: auto;
+}
+
+ .center.navbar .nav,
+ .center.navbar .nav > li {
+ float:none;
+ display:inline-block;
+ *display:inline; /* ie7 fix */
+ *zoom:1; /* hasLayout ie7 trigger */
+ vertical-align: top;
+ }
+ .center.navbar-inner {
+ text-align:center;
+ }
+ .center .dropdown-menu {
+ text-align: left;
+ }
+ .navbar-inner {
+ margin: 0 auto;
+ }
+/* center */
+
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #ff7f50;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #0000ff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #00ff00;
+   text-decoration: none;
+  background-color: #00ff00;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+ .navbar-default .navbar-nav > li > a {
+     background-color: #000080; /*Change active text color here*/
+     color: #ffc3a0; /*Change active text color here*/
+ }
+ 
+ .navbar {
+     background-color: #000080; /*Change active text color here*/
+     color: #ffc3a0; /*Change active text color here*/
+ }
