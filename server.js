@@ -54,8 +54,8 @@ var SampleApp = function() {
      *  @param {string} key  Key identifying content to retrieve from cache.
      */
     self.cache_get = function(key) { return self.zcache[key]; };
-//  Local cache for static content.
-        self.zcache['index.html'] = fs.readFileSync('./index.html');
+        
+
 
     /**
      *  terminator === the termination handler
