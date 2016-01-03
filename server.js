@@ -41,11 +41,13 @@ var SampleApp = function() {
         if (typeof self.zcache === "undefined") {
             self.zcache = { 'index.html': '' };
             self.zcache = { 'wed.html': '' };
+            self.zcache = { 'gallery.html': '' };
         }
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['wed.html'] = fs.readFileSync('./wed.html');
+        self.zcache['gallery.html'] = fs.readFileSync('./gallery.html');
     };
 
 
@@ -111,6 +113,11 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('wed.html') );
         };
+
+        self.routes['/photos'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('gallery.html') );
+        };
     };
 
 
@@ -122,7 +129,7 @@ var SampleApp = function() {
         self.createRoutes();
         self.app = express.createServer();
         // serve static assets
-        ['css'].forEach(function (dir){
+        ['css','img'].forEach(function (dir){
             self.app.use('/'+dir, express.static(__dirname+'/'+dir));
         });
 
