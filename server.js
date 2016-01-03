@@ -122,7 +122,9 @@ var SampleApp = function() {
         self.createRoutes();
         self.app = express.createServer();
         // serve static assets
-        self.app.use(express.static("css"));
+        ['css'].forEach(function (dir){
+            self.app.use('/'+dir, express.static(__dirname+'/'+dir));
+        });
 
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
