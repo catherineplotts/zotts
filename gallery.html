@@ -10,22 +10,34 @@
 		<h3>Catherine & Mike's Photo Gallery</h3>
 			<p>This is a photo gallery to showcase our lives together so far.</p>
 			<div class="thumbnails">
-				<img onmouseover="preview.src=img1.src" name="img1" src="img/img1.jpg" alt=""/>
-				<img onmouseover="preview.src=img2.src" name="img2" src="img/img2.jpg" alt="" />
-				<img onmouseover="preview.src=img3.src" name="img3" src="img/img3.jpg" alt="" />
-				<img onmouseover="preview.src=img4.src" name="img4" src="img/img4.jpg" alt="" />
-				<img onmouseover="preview.src=img5.src" name="img5" src="img/img5.jpg" alt="" />
-				<img onmouseover="preview.src=img6.src" name="img6" src="img/img6.jpg" alt="" />
-				<img onmouseover="preview.src=img7.src" name="img7" src="img/img7.JPG" alt="" />
-				<img onmouseover="preview.src=img8.src" name="img8" src="img/img8.JPG" alt="" />
-				<img onmouseover="preview.src=img9.src" name="img9" src="img/img9.JPG" alt="" />
-				<img onmouseover="preview.src=img10.src" name="img10" src="img/img10.JPG" alt="" />
+				<img onmouseover="updatePreviewPicture(img1)" name="img1" src="img/june2009.jpg" alt="" title="Senior Prom - June 2009"/>
+				<img onmouseover="updatePreviewPicture(img2)" name="img2" src="img/oct2009.jpg" alt="" title="Halloween Hayride - October 2009"/>
+				<img onmouseover="updatePreviewPicture(img3)" name="img3" src="img/may2012.jpg" alt="" title="Bamboozle - May 2012"/>
+				<img onmouseover="updatePreviewPicture(img4)" name="img4" src="img/april2013.JPG" alt="" title="Formal - April 2013"/>
+				<img onmouseover="updatePreviewPicture(img5)" name="img5" src="img/may2013.jpg" alt="" title="Universal Studios - May 2013"/>
+				<img onmouseover="updatePreviewPicture(img6)" name="img6" src="img/june2013.jpg" alt="" title="Fort Lauderdale - June 2013"/>
+				<img onmouseover="updatePreviewPicture(img7)" name="img7" src="img/may2014.JPG" alt="" title="Daytona Beach - May 2014"/>
+				<img onmouseover="updatePreviewPicture(img8)" name="img8" src="img/august2014.jpg" alt="" title="Newport Island - August 2014"/>
+				<img onmouseover="updatePreviewPicture(img9)" name="img9" src="img/halloween2014.JPG" alt="" title="Minne & the Cheshire Cat - Halloween 2014"/>
+				<img onmouseover="updatePreviewPicture(img10)" name="img10" src="img/feb2015.JPG" alt="" title="Valentine's Day - February 2015"/>
 			</div>
 
-			<div class="preview" align="center">
-				<img name="preview" src="img/img1.jpg" alt=""/>
+			<div id="preview" align="center">
+				<figure>
+					<img id="previewImg" name="preview" src="img/june2009.jpg" alt=""/>
+					<figcaption id="caption">Start text</figcaption>
+				</figure>
 			</div>
 
-	</div> <!-- Close the gallery div -->
+	</div>
+	<script>
+		function updatePreviewPicture(img){
+			console.log(document.getElementById('previewImg').src);
+			console.log(document.getElementById('caption').innerHTML);
+			console.log(img.title);
+			document.getElementById('previewImg').src = img.src;
+			document.getElementById('caption').innerHTML = img.title;
+		}
+	</script>
 	</body>
 </html>

@@ -44,6 +44,12 @@ p{
 	line-height: 18px;
 
 }
+figcaption{
+	font-size: 16px;
+	color: #FF9966;
+	font-family: 'Arial Narrow', Helvetica, sans-serif;
+	line-height: 18px;
+}
 
 p a{
 
@@ -181,7 +187,7 @@ a{
 		cursor:pointer;
 	}
 
-	.preview img {
+	#preview img {
 		border: 4px solid #ffc3a0;
 		padding: 1px;
 		width: 400px;
