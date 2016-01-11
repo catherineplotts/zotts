@@ -1,13 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-	<head>
-		<title>Photo Gallery</title>
-		<link rel="stylesheet" type="text/css" href="css/wedding.css">
-	</head>  
+<head>
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wedding2.css">
+</head>  
 
-	<body>
+<body role="document">
+	<!-- Fixed navbar -->
+	<NAV class="navbar navbar-fixed-top center navbar-default">
+		<!--   <DIV class="container"> -->
+		<DIV class="navbar-collapse collapse" id="navbar">
+			<UL class="nav navbar-nav">
+			<LI><A href="http://zotts.wedding/#story">Their Love Story</A></LI>
+				<LI><A href="http://zotts.wedding/#message">Bride & Groom's Message</A></LI>
+				<LI class="dropdown">
+					<A class="dropdown-toggle" role="button" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Wedding Info <SPAN class="caret"></SPAN></A>
+					<UL class="dropdown-menu">
+						<LI><A href="http://zotts.wedding/#registry">Registry</A></LI>
+						<LI><A href="http://zotts.wedding/#hotel">Hotel Information</A></LI>
+						<LI><A href="http://zotts.wedding/#rsvp">RSVP</A></LI>
+						<LI><A href="http://zotts.wedding/#venue">Venue Information</A></LI>
+					</UL>
+				</LI>
+				<LI><A href="photos">Photo Gallery</A></LI>
+				<LI><A href="mailto://cplotts09@gmail.com">Contact Us</A></LI>
+			</UL>
+		</DIV>     <!--/.navbar-collapse -->
+
+		<!-- </DIV> -->
+
+	</NAV>
 	<div class="gallery" align="center">
-		<h3>Catherine & Mike's Photo Gallery</h3>
+		<DIV class="container theme-showcase" role="main">
+			<DIV class="jumbotron"><h3>Catherine & Mike's Photo Gallery</h3></DIV></DIV>
 			<p>This is a photo gallery to showcase our lives together so far.</p>
 			<div class="thumbnails">
 				<img onmouseover="updatePreviewPicture(img1)" name="img1" src="img/june2009.jpg" alt="" title="Senior Prom - June 2009"/>
@@ -19,7 +46,7 @@
 				<img onmouseover="updatePreviewPicture(img7)" name="img7" src="img/may2014.JPG" alt="" title="Daytona Beach - May 2014"/>
 				<img onmouseover="updatePreviewPicture(img8)" name="img8" src="img/august2014.jpg" alt="" title="Newport Island - August 2014"/>
 				<img onmouseover="updatePreviewPicture(img9)" name="img9" src="img/halloween2014.JPG" alt="" title="Minnie & the Cheshire Cat - Halloween 2014"/>
-				<img onmouseover="updatePreviewPicture(img10)" name="img10" src="img/feb2015.JPG" alt="" title="Valentine's Day - February 2015"/>
+				<img onmouseover="updatePreviewPicture(img10)" name="img10" src="img/summer2015.jpg" alt="" title="Asbury Park - Summer 2015"/>
 			</div>
 
 			<div id="preview" align="center">
@@ -29,15 +56,18 @@
 				</figure>
 			</div>
 
-	</div>
-	<script>
-		function updatePreviewPicture(img){
-			console.log(document.getElementById('previewImg').src);
-			console.log(document.getElementById('caption').innerHTML);
-			console.log(img.title);
+		</div>
+		<script>
+			function updatePreviewPicture(img){
 			document.getElementById('previewImg').src = img.src;
 			document.getElementById('caption').innerHTML = img.title;
-		}
-	</script>
+			}
+		</script>
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages (appear to) load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/docs.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
-</html>
+	</html>
