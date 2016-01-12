@@ -203,14 +203,9 @@ a{
      margin-left: 0px;
      font-size:14px;
  }
-
- #container{
-    position: relative;
-}
  
  .navbar {
  	text-align: left;
- 	position: absolute;
  	width:auto;
     background-color: #000051; /*Change active text color here*/
     color: #000051; /*Change active text color here*/
