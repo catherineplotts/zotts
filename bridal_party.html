@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Bridal Party</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wedding2.css">
+</head>  
+
+<body role="document">
+	 <!-- Fixed navbar -->
+              <nav class="navbar navbar-fixed-top center navbar-default" role="navigation">
+               <div class="container">
+                 <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="http://zotts.wedding/#">Zotts Wedding</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="http://zotts.wedding/#story">Their Love Story</a></li>
+                    <li><a href="http://zotts.wedding/#message">Bride & Groom's Message</a></li>
+                    <li class="dropdown">
+                     <a class="dropdown-toggle" role="button" aria-expanded="false" aria-haspopup="true" href="http://zotts.wedding/#" data-toggle="dropdown">Wedding Info <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                      <li><a href="http://zotts.wedding/#registry">Registry</a></li>
+                      <li><a href="http://zotts.wedding/#hotel">Hotel Information</a></li>
+                      <li><a href="http://zotts.wedding/#rsvp">RSVP</a></li>
+                      <li><A href="http://zotts.wedding/#venue">Venue Information</A></li>
+                    </ul>
+                  </li>
+                  <li><a href="http://zotts.wedding/bridesmaids">Bridal Party</a></li>
+                  <li><a href="http://zotts.wedding/groomsmen">Groomsmen</a></li>
+                  <li><a href="http://zotts.wedding/photos">Photo Gallery</a></li>
+                  <li><a href="mailto://zotts.9.9.16@gmail.com">Contact Us</a></li>
+                </ul>
+              </div>           
+            </div> 
+          </nav>
+	<div class="gallery" align="center">
+		<DIV class="container theme-showcase" role="main">
+			<DIV class="jumbotron"><h3>Catherine's Bridal Party</h3></DIV></DIV>
+			<p>A quick look at the ladies the bride couldn't live without.</p>
+			<div class="thumbnails">
+				<img onmouseover="updatePreviewPicture(img3)" name="img3" src="img/cindy.jpg" alt="" title="Cindy Plotts is the maid of honor and Catherine's sister. Cindy has been there for Catherine throughout her life and Catherine cannot imagine her wedding day without Cindy standing by her side."/>
+				<img onmouseover="updatePreviewPicture(img1)" name="img1" src="img/taylor.jpg" alt="" title="Taylor Reynolds is a bridesmaid. Taylor and Catherine have been friends for many years. In fact, Taylor was the person who introduced Mike and Catherine! The couple is thrilled to have Taylor as part of the wedding party."/>
+				<img onmouseover="updatePreviewPicture(img2)" name="img2" src="img/kate.jpg" alt="" title="Kate McParland is a bridesmaid. Kate and Catherine have been friends since elementary school. Through highs and lows, they've always stuck together and Catherine is excited to have Kate as part of one of the best days of her life."/>
+			</div>
+
+			<div id="preview" align="center">
+				<figure>
+					<img id="previewImg" name="preview" src="img/cindy.jpg" alt=""/>
+					<figcaption id="caption">Cindy Plotts is the maid of honor and Catherine's sister. Cindy has been there for Catherine throughout her life and Catherine cannot imagine her wedding day without Cindy standing by her side.</figcaption>
+				</figure>
+			</div>
+
+		</div>
+		<script>
+			function updatePreviewPicture(img){
+			document.getElementById('previewImg').src = img.src;
+			document.getElementById('caption').innerHTML = img.title;
+			}
+		</script>
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages (appear to) load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/docs.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+	</html>
