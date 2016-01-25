@@ -42,12 +42,16 @@ var SampleApp = function() {
             self.zcache = { 'index.html': '' };
             self.zcache = { 'wed.html': '' };
             self.zcache = { 'gallery.html': '' };
+            self.zcache = { 'bridal_party.html': '' };
+            self.zcache = { 'groomsmen.html': '' };
         }
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['wed.html'] = fs.readFileSync('./wed.html');
         self.zcache['gallery.html'] = fs.readFileSync('./gallery.html');
+        self.zcache['bridal_party.html'] = fs.readFileSync('./bridal_party.html');
+        self.zcache['groomsmen.html'] = fs.readFileSync('./groomsmen.html');
     };
 
 
@@ -112,6 +116,14 @@ var SampleApp = function() {
         self.routes['/photos'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('gallery.html') );
+        };
+        self.routes['/bridesmaids'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('bridal_party.html') );
+        };
+        self.routes['/groomsmen'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('groomsmen.html') );
         };
     };
 

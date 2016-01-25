@@ -48,7 +48,7 @@ h2{
 p{
 
 	font-size: 14px;
-	color: #000051;
+	color: #000073;
 	font-family: Helvetica, sans-serif;
 	line-height: 18px;
 	margin: 0 0 0 35px;
@@ -57,15 +57,17 @@ p{
 }
 figcaption{
 	font-size: 16px;
-	color: #000051;
+	margin: 10px 0 0 0 ;
+	color: #000073;
 	font-family: 'Arial Narrow', Helvetica, sans-serif;
 	line-height: 18px;
+	width:375px;
 }
 
 p a{
 
 	font-size: 16px;
-	color: #000051;
+	color: #000073;
 	font-family: 'Arial Narrow', Helvetica, sans-serif;
 	line-height: 18px;
 	text-decoration: underline;
@@ -78,7 +80,7 @@ p a:hover{
 
 a{
 
-	color: #000051
+	color: #000073
 	outline: none;
 
 }
@@ -191,18 +193,18 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 
 
 .navbar-default .navbar-nav > li > a {
-	background-color: #000051; /*Change active text color here*/
+	background-color: #000073; /*Change active text color here*/
 	color: #fcf0f3; /*Change active text color here*/
 	width: auto;
 }
 
 .navbar-default .navbar-header > a:hover {
-	background-color: #000051; /*Change active text color here*/
+	background-color: #000073; /*Change active text color here*/
 	color: #ff8577; /*Change active text color here*/
 	width: auto;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand > a {
-	background-color: #000051; /*Change active text color here*/
+	background-color: #000073; /*Change active text color here*/
 	width: auto;
 	margin-left: 0px;
 	font-size:14px;
@@ -211,18 +213,18 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 .navbar {
 	text-align: left;
 	width:auto;
-	background-color: #000051; /*Change active text color here*/
-	color: #000051; /*Change active text color here*/
+	background-color: #000073; /*Change active text color here*/
+	color: #000073; /*Change active text color here*/
 }
 #navbar {
 	width: auto;
-	background-color: #000051;
+	background-color: #000073;
 
 }
 .navbar-header{
 	width: auto;
 	color:#fcf0f3;
-	background-color: #000051;
+	background-color: #000073;
 
 }
 
@@ -236,32 +238,32 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 .container .#navbar{
 	width: auto;
 	color:#fcf0f3;
-	background-color: #000051;
+	background-color: #000073;
 
 }
 
 .navbar-default .navbar-brand {
 	color: #fcf0f3;
-	background-color: #000051;
+	background-color: #000073;
 }
 
 
 .thumbnails img {
 	height: 80px;
 	width: 80px;
-	border: 4px solid #000051;
+	border: 4px solid #000073;
 	padding: 1px;
 	margin: 15px 10px 15px 0;
 }
 .thumbnails img:hover {
-	border: 4px solid #000051;
+	border: 4px solid #000073;
 	cursor:pointer;
 	padding: 1px;
 	background-color: #ff8577;
 }
 
 #preview img {
-	border: 4px solid #000051;
+	border: 4px solid #000073;
 	padding: 2px;
 	background-color: #ff8577;
 	width: 375px;
@@ -269,7 +271,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 #homepic img{
 
-	border: 4px solid #000051;
+	border: 4px solid #000073;
 	padding: 2px;
 	background-color: #ff8577;
 	margin:5px 0px 5px 0px;
