@@ -208,6 +208,11 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #fcf0f3; /*Change active text color here*/
 	width: auto;
 }
+.navbar-default .navbar-header > a:visited {
+	background-color: #000073; /*Change active text color here*/
+	color: #fcf0f3; /*Change active text color here*/
+	width: auto;
+}
 
 .navbar-default .navbar-header > a:hover {
 	background-color: #000073; /*Change active text color here*/
@@ -216,9 +221,16 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand > a {
 	background-color: #000073; /*Change active text color here*/
+	color: #fcf0f3; 
 	width: auto;
 	margin-left: 0px;
 	font-size:14px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand > a:visited {
+	background-color: #000073; /*Change active text color here*/
+	color: #fcf0f3; /*Change active text color here*/
+	width: auto;
 }
 
 .navbar {
