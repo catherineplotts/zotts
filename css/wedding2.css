@@ -45,6 +45,17 @@ h2{
 
 }
 
+h4{
+	color: #000073;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	margin: 0 0 0 25px;
+	padding: 0 0 10px 0px;
+
+}
+
 p{
 
 	font-size: 14px;
@@ -66,9 +77,9 @@ figcaption{
 
 p a{
 
-	font-size: 16px;
-	color: #000073;
-	font-family: 'Arial Narrow', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #993299;
+	font-family: Helvetica, sans-serif;;
 	line-height: 18px;
 	text-decoration: underline;
 
